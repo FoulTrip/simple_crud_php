@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,1000&display=swap');
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.titlePage {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+.boxForm {
+  flex-grow: 1;
+  display: grid;
+  place-content: center;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.form {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  padding: 30px 30px 30px 30px;
+  border-radius: 1em;
+  scale: 1.02;
+}
+
+.inputBox {
+  position: relative;
+  font-family: 'Nunito Sans', sans-serif;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input_field {
+  width: 93%;
+  padding: 10px;
+  border:  1px solid #000;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1em;
+
+}
+
+.subtitle {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+
+.boxSubmit {
+    display: grid;
+    place-content: center;
+}
+
+.options-input {
+    padding: 10px;
+}
+
+.input_label {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: 0.5s;
+  cursor: default;
+}
+
+.input_field:valid ~ span,
+.input_field:focus ~ span
+{
+  color: #000;
+  transform: translateX(10px) translateY(-7px);
+  background: #fff;
+  padding: 0 10px;
+  font-size: 10px;
+}
+
+.boxBtnSubmit {
+  display: grid;
+  place-content: center;
+}
+
+.btnSubmit {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #000;
+  cursor: pointer;
+  background: rgb(129, 131, 129);
+  color: #fff;
+}
+
+.btnSubmit:hover {
+  scale: 1.02;
+}
+
+@media screen and (max-width: 700) {
+  .input_label {
+    font-size: 10px;
+  }
+}

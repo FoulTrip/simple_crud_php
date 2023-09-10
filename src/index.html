@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Formulario de Hoja de Vida</title>
+  </head>
+
+  <body>
+    <p class="titlePage">Formulario de Hoja de Vida</p>
+
+    <div class="boxForm">
+      <form class="form" method="post" action="./php/create.php">
+        <div class="inputBox">
+          <input
+            class="input_field"
+            type="text"
+            name="nombre"
+            id="nombre"
+            required
+          />
+          <span class="input_label" for="nombre">Nombre completo:</span>
+        </div>
+        <div class="inputBox">
+          <input
+            class="input_field"
+            type="text"
+            name="fecha_nacimiento"
+            id="fecha_nacimiento"
+            required
+          />
+          <span class="input_label" for="fecha_nacimiento">Fecha de nacimiento (dd/mm/yy):</span>
+        </div>
+        <div class="inputBox">
+          <select class="input_field" name="genero" id="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+          <span class="input_label" for="genero">Género:</span>
+        </div>
+        <div class="inputBox">
+          <input
+            class="input_field"
+            type="text"
+            name="telefono"
+            id="telefono"
+            required
+          />
+          <span class="input_label">Teléfono de contacto:</span>
+        </div>
+        <div class="inputBox">
+          <input
+            class="input_field"
+            type="text"
+            name="email"
+            id="email"
+            required
+          />
+          <span class="input_label" for="email">Correo electrónico:</span>
+        </div>
+        <p class="subtitle">Objetivo Profesional o Resumen</p>
+        <textarea
+          class="input_field"
+          name="objetivo"
+          id="objetivo"
+          rows="4"
+          cols="50"
+        ></textarea>
+
+        <div class="boxSubmit">
+          <input class="btnSubmit" type="submit" value="Enviar" />  
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
